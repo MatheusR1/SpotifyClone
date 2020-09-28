@@ -1,0 +1,20 @@
+* a:hover {
+    color: rgb(67, 223, 19);
+}
+
+* li>a:hover {
+    color: rgb(67, 223, 19);
+}
+
+* li>a:link {
+    text-decoration: none;
+}
+
+* li>a {
+    color: cornsilk;
+}
+
+p.data {
+    margin-top: 1rem;
+    color: cornsilk;
+}
