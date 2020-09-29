@@ -1,51 +1,89 @@
-.accordion {
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0,0,0,.1);
+}
 
-    padding: 0;
-    border: 0;
-    background-color: #fff;
-    margin-bottom: 30px;
-    transition: 0.4s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-} 
-    .accordion__content {
-    visibility: visible;
-    }
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
 
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+}
 
-  .accordion__header {
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    background-color: white;
-    border: 2px solid #EC3FAA;
-    color: #EC3FAA;
-    text-align: center;
-  }
+details + details {
+  margin-top: 20px;
+}
 
-  .accordion__content {
-    margin: 20px;
-    padding: 0 20px;
-    border-left: 1px solid #d1d1d1;
-    width: calc(100% - 20px);
-    box-sizing: border-box;
-    color: #9fa1a2;
-    display: none;
-    transition: visibility 0.2s ease-in-out;
-  }
-    .accordion__header { 
-      border-color: #96D3D6;
-      color: #96D3D6;
-    }
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
 
-@media (min-width: 1200px) {
-  .accordion {
-    width: 50%;
-    font-size: 18px;
-    border-radius: 40px;
-    text-align: center;
-    }
-  }
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+  
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px rgb(67, 223, 19);
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: rgb(67, 223, 19);
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
