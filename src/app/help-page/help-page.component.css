@@ -87,3 +87,9 @@ details[open] .control-icon-close {
 details[open] .control-icon-expand {
   display: none;
 }
+
+#imgpos {
+  margin-bottom:8rem;
+  margin-top:8rem;
+}
+

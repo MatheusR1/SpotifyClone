@@ -1,0 +1,132 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require naked.min
+ *= require_self
+ *= require owl.carousel.min
+ *= require owl.theme.default.min
+ *= require_tree ./landing
+ */
+
+ @font-face {
+    font-family: 'Averta';
+    font-weight: normal;
+    font-display: swap;
+    src: asset-url('averta-regular-webfont.woff2') format('woff2'), 
+         asset-url('averta-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('averta-regular-webfont.woff') format('woff'),
+         asset-url('averta-regular-webfont.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Averta';
+    font-weight: bold;
+    font-display: swap;
+    src: asset-url('averta-bold-webfont.woff2') format('woff2'), 
+         asset-url('averta-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('averta-bold-webfont.woff') format('woff'),
+         asset-url('averta-bold-webfont.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Averta Black';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: asset-url('averta-black-webfont.woff2'), 
+         asset-url('averta-black-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('averta-black-webfont.woff') format('woff'),
+         asset-url('averta-black-webfont.ttf') format('truetype');
+  }
+  
+  body, input, select, button {
+    font-family: 'Averta', helvetica neue, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #555;
+    overflow-x: hidden;
+  
+    &.body--locked {
+      overflow: hidden;
+    }
+  }
+  
+  a {
+    color: #555;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  p {
+    margin: 0 0 15px;
+  }
+  
+  [class*=grid__] {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .resp-img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+  
+  .grid {
+    margin: 0;
+  }
+  
+  .scroll-hidden {
+    overflow: hidden;
+  }
+  
+  .link {
+    color:#8f95aa;
+    text-decoration:none;
+    &:hover {
+      color: #ef88bf;
+    }
+  } 
+  
+  @media (min-width: 1200px) { 
+    .grid {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
