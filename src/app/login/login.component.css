@@ -1,0 +1,15 @@
+div.container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div form button[type="submit"]{
+    margin-top: 1rem;
+    background-color: rgb(56, 184, 56);
+   
+}

@@ -1,0 +1,22 @@
+div.container  ul>li>a>img{
+    max-width: 200px;
+    max-height: 150px;
+    width: 200px;
+    height: 200;
+}
+
+div.container ul {
+    margin-top: 5rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* column-gap: -20rem; */
+}
+
+h3{
+    margin-top: 3rem;
+    padding-left: 70vh;
+    display: flex;
+    
+    flex-direction: center;
+}

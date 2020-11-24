@@ -7,6 +7,10 @@ import { PageHomeComponent } from './page-home/page-home.component';
 import { RodaPeComponent } from './roda-pe/roda-pe.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HelpPageComponent } from './help-page/help-page.component';
+import { PlayListsComponent } from './play-lists/play-lists.component';
+import { LoginComponent } from './login/login.component';
+import { MusicPlayComponent } from './music-play/music-play.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +18,10 @@ import { HelpPageComponent } from './help-page/help-page.component';
     PageHomeComponent,
     RodaPeComponent,
     SideMenuComponent,
-    HelpPageComponent
+    HelpPageComponent,
+    PlayListsComponent,
+    LoginComponent,
+    MusicPlayComponent,
   ],
   imports: [
     BrowserModule,

@@ -31,13 +31,14 @@
     
     .home div#anuncio>h1 {
         font-family: 'Secular One', sans-serif;
-        font-size: 7em;
+        font-size: 5em;
         text-align: center;
         color: #1ED760;
     }
     
     .home div#anuncio>p {
         padding-top: 0.5rem;
+        margin-left: 2.65rem;
         color: #1ED760;
     }
     

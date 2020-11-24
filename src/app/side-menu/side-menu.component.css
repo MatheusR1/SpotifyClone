@@ -3,6 +3,10 @@ nav img.spotify {
     margin-left: 0.5rem;
 }
 
+nav{
+    position: relative;
+} 
+
 * a:hover {
     color: rgb(67, 223, 19);
 }
