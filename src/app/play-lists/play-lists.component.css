@@ -1,8 +1,9 @@
 div.container  ul>li>a>img{
     max-width: 200px;
-    max-height: 150px;
+    max-height: 200px;
     width: 200px;
-    height: 200;
+    height: 200px;
+    margin-bottom: 2rem;
 }
 
 div.container ul {
@@ -10,13 +11,10 @@ div.container ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* column-gap: -20rem; */
+    /* -ms-grid-column-align: center */
 }
 
 h3{
-    margin-top: 3rem;
-    padding-left: 70vh;
-    display: flex;
-    
-    flex-direction: center;
+    margin-top: 5rem;
+    text-align: center;
 }

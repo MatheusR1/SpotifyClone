@@ -1,10 +1,14 @@
 div.container{
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 form {
-    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: grid;
     flex-direction: column;
 }
 
@@ -12,4 +16,8 @@ div form button[type="submit"]{
     margin-top: 1rem;
     background-color: rgb(56, 184, 56);
    
+}
+
+h1{
+    text-align: center;
 }

@@ -1,1 +1,9 @@
-<p>music-play works!</p>
+<h5> play-list Rock</h5>
+
+<ul>
+    <li *ngFor = "let m of musicas">
+        <audio controls>
+            <source src="{{m.src}}" type="audio/mpeg">
+        </audio>
+    </li>
+</ul>
